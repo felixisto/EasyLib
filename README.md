@@ -1,0 +1,2 @@
+# EasyLib
+ C++ utilities library

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4a4adc7a-e41e-454d-9ac1-2f1755e6dea4}</ProjectGuid>
+    <RootNamespace>EasyLib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="EasyLib.cpp" />
+    <ClCompile Include="Easy\Basic\DataSize.cpp" />
+    <ClCompile Include="Easy\Basic\Limits.cpp" />
+    <ClCompile Include="Easy\Basic\Math.cpp" />
+    <ClCompile Include="Easy\Basic\TimeUnit.cpp" />
+    <ClCompile Include="Easy\Basic\Time.cpp" />
+    <ClCompile Include="Easy\Concurrency\ScopeLock.cpp" />
+    <ClCompile Include="Easy\Concurrency\SimpleLock.cpp" />
+    <ClCompile Include="Easy\FileSystem\Directory.cpp" />
+    <ClCompile Include="Easy\FileSystem\DirectoryService.cpp" />
+    <ClCompile Include="Easy\FileSystem\File.cpp" />
+    <ClCompile Include="Easy\FileSystem\FileAttributeService.cpp" />
+    <ClCompile Include="Easy\FileSystem\Path.cpp" />
+    <ClCompile Include="Easy\FileSystem\Windows\DirectoryServiceWin32.cpp" />
+    <ClCompile Include="Easy\FileSystem\Windows\FileAttributeServiceWin32.cpp" />
+    <ClCompile Include="Easy\Formatters\DateFormatter.cpp" />
+    <ClCompile Include="Easy\Foundation\CharacterSet.cpp" />
+    <ClCompile Include="Easy\Foundation\CharacterSetData.cpp" />
+    <ClCompile Include="Easy\Foundation\CString.cpp" />
+    <ClCompile Include="Easy\Foundation\Date.cpp" />
+    <ClCompile Include="Easy\Foundation\FileStream.cpp" />
+    <ClCompile Include="Easy\Math\Hashing\MurmurHash64B.cpp" />
+    <ClCompile Include="Easy\Tool\Logging.cpp" />
+    <ClCompile Include="Easy\Tool\Stack.cpp" />
+    <ClCompile Include="Easy\Tool\StackWalker\StackWalker.cpp" />
+    <ClCompile Include="Easy\Tool\TeuchosStackTrace\TeuchosStackTrace.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Easy\Basic\Basic.h" />
+    <ClInclude Include="Easy\Basic\Buffer.h" />
+    <ClInclude Include="Easy\Basic\Constants.h" />
+    <ClInclude Include="Easy\Basic\Constraints.h" />
+    <ClInclude Include="Easy\Basic\DataSize.h" />
+    <ClInclude Include="Easy\Basic\Hashable.h" />
+    <ClInclude Include="Easy\Basic\Iterator.h" />
+    <ClInclude Include="Easy\Basic\TimeUnit.h" />
+    <ClInclude Include="Easy\Basic\String.h" />
+    <ClInclude Include="Easy\Basic\Time.h" />
+    <ClInclude Include="Easy\FileSystem\Directory.h" />
+    <ClInclude Include="Easy\FileSystem\DirectoryService.h" />
+    <ClInclude Include="Easy\FileSystem\Error.h" />
+    <ClInclude Include="Easy\FileSystem\File.h" />
+    <ClInclude Include="Easy\FileSystem\FileAttributes.h" />
+    <ClInclude Include="Easy\FileSystem\FileAttributeService.h" />
+    <ClInclude Include="Easy\FileSystem\Path.h" />
+    <ClInclude Include="Easy\FileSystem\Windows\DirectoryServiceWin32.h" />
+    <ClInclude Include="Easy\FileSystem\Windows\FileAttributeServiceWin32.h" />
+    <ClInclude Include="Easy\FileSystem\Windows\FileTimeWin32.h" />
+    <ClInclude Include="Easy\FileSystem\Windows\WindowsFileSystem.h" />
+    <ClInclude Include="Easy\Formatters\TimeFormatter.h" />
+    <ClInclude Include="Easy\Foundation\FileStream.h" />
+    <ClInclude Include="Easy\Foundation\Stream.h" />
+    <ClInclude Include="Easy\Samples\FileSystemStuff1.h" />
+    <ClInclude Include="Easy\Samples\Helpers\SampleTest.h" />
+    <ClInclude Include="Easy\Samples\Limits1.h" />
+    <ClInclude Include="Easy\Samples\TimeFormatterStuff1.h" />
+    <ClInclude Include="Easy\Samples\TimeStuff1.h" />
+    <ClInclude Include="Easy\Samples\ToolStuff1.h" />
+    <ClInclude Include="Easy\Tool\ErrorHandling.h" />
+    <ClInclude Include="Easy\Basic\Limits.h" />
+    <ClInclude Include="Easy\Basic\Defines.h" />
+    <ClInclude Include="Easy\Basic\Math.h" />
+    <ClInclude Include="Easy\Basic\System.h" />
+    <ClInclude Include="Easy\Basic\Utilities.h" />
+    <ClInclude Include="Easy\Collections\Array\BaseList.h" />
+    <ClInclude Include="Easy\Collections\Collection.h" />
+    <ClInclude Include="Easy\Collections\Collections.h" />
+    <ClInclude Include="Easy\Collections\Enumeration\PairIterator.h" />
+    <ClInclude Include="Easy\Collections\Enumeration\InternalIterator.h" />
+    <ClInclude Include="Easy\Collections\Enumeration\IteratorPointer.h" />
+    <ClInclude Include="Easy\Collections\Enumeration\MutableIterator.h" />
+    <ClInclude Include="Easy\Collections\Set\Set.h" />
+    <ClInclude Include="Easy\Collections\Set\SimpleSet.h" />
+    <ClInclude Include="Easy\Collections\Utilities\Counting.h" />
+    <ClInclude Include="Easy\Collections\Utilities\CountingNumbers.h" />
+    <ClInclude Include="Easy\Collections\Enumeration\ConstIterator.h" />
+    <ClInclude Include="Easy\Collections\Array\List.h" />
+    <ClInclude Include="Easy\Collections\Dictionary\Dictionary.h" />
+    <ClInclude Include="Easy\Collections\Set\BaseSet.h" />
+    <ClInclude Include="Easy\Collections\Utilities\Sorting.h" />
+    <ClInclude Include="Easy\Concurrency\ThreadManager.h" />
+    <ClInclude Include="Easy\Formatters\DateFormatter.h" />
+    <ClInclude Include="Easy\Foundation\CharacterSetData.h" />
+    <ClInclude Include="Easy\Math\Sorting\BubbleSort.h" />
+    <ClInclude Include="Easy\Collections\Utilities\SortingNumbers.h" />
+    <ClInclude Include="Easy\Collections\Array\Vector.h" />
+    <ClInclude Include="Easy\Concurrency\Atomic.h" />
+    <ClInclude Include="Easy\Concurrency\ScopeLock.h" />
+    <ClInclude Include="Easy\Concurrency\SimpleLock.h" />
+    <ClInclude Include="Easy\Concurrency\Thread.h" />
+    <ClInclude Include="Easy\Easy.h" />
+    <ClInclude Include="Easy\Formatters\ByteFormatter.h" />
+    <ClInclude Include="Easy\Formatters\StringFormatter.h" />
+    <ClInclude Include="Easy\Formatters\NumberFormatter.h" />
+    <ClInclude Include="Easy\Foundation\Character.h" />
+    <ClInclude Include="Easy\Foundation\CharacterSet.h" />
+    <ClInclude Include="Easy\Foundation\CString.h" />
+    <ClInclude Include="Easy\Foundation\Date.h" />
+    <ClInclude Include="Easy\Foundation\Hasher.h" />
+    <ClInclude Include="Easy\Foundation\Number.h" />
+    <ClInclude Include="Easy\Foundation\BasicString.h" />
+    <ClInclude Include="Easy\Foundation\String.h" />
+    <ClInclude Include="Easy\Tool\Logging.h" />
+    <ClInclude Include="Easy\Math\Hashing\MurmurHash64B.h" />
+    <ClInclude Include="Easy\Math\Sorting\CheckSort.h" />
+    <ClInclude Include="Easy\Math\Sorting\HeapSort.h" />
+    <ClInclude Include="Easy\Math\Sorting\InsertionSort.h" />
+    <ClInclude Include="Easy\Math\Sorting\MergeSort.h" />
+    <ClInclude Include="Easy\Math\Sorting\QuickSort.h" />
+    <ClInclude Include="Easy\Math\Sorting\ReverseSort.h" />
+    <ClInclude Include="Easy\Math\Sorting\SelectionSort.h" />
+    <ClInclude Include="Easy\Samples\Buffer1.h" />
+    <ClInclude Include="Easy\Samples\SmallCharsetStuff1.h" />
+    <ClInclude Include="Easy\Samples\CountingStuff1.h" />
+    <ClInclude Include="Easy\Samples\Data\SimpleNumbersSample.h" />
+    <ClInclude Include="Easy\Samples\OverflowStuff1.h" />
+    <ClInclude Include="Easy\Samples\Samples.h" />
+    <ClInclude Include="Easy\Samples\BasicStructs1.h" />
+    <ClInclude Include="Easy\Samples\CollectionsStuff1.h" />
+    <ClInclude Include="Easy\Samples\SortingPerformance1.h" />
+    <ClInclude Include="Easy\Samples\SortingStuff1.h" />
+    <ClInclude Include="Easy\Samples\StringTests1.h" />
+    <ClInclude Include="Easy\Samples\ToString1.h" />
+    <ClInclude Include="Easy\Samples\Helpers\Logging.h" />
+    <ClInclude Include="Easy\Tool\Stack.h" />
+    <ClInclude Include="Easy\Tool\StackWalker\StackWalker.h" />
+    <ClInclude Include="Easy\Tool\TeuchosStackTrace\TeuchosStackTrace.hpp" />
+    <ClInclude Include="Easy\Tool\TeuchosStackTrace\Teuchos_ConfigDefs.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
