@@ -11,20 +11,21 @@
 #include "Data/SimpleNumbersSample.h"
 
 // Samples
-#include "ToString1.h"
-#include "CountingStuff1.h"
-#include "CollectionsStuff1.h"
-#include "Buffer1.h"
-#include "SortingStuff1.h"
-#include "SortingPerformance1.h"
-#include "OverflowStuff1.h"
-#include "SmallCharsetStuff1.h"
-#include "StringTests1.h"
-#include "ToolStuff1.h"
-#include "FileSystemStuff1.h"
-#include "Limits1.h"
-#include "TimeStuff1.h"
-#include "TimeFormatterStuff1.h"
+#include "Stuff/ToString1.h"
+#include "Stuff/CountingStuff1.h"
+#include "Stuff/CollectionsStuff1.h"
+#include "Stuff/Buffer1.h"
+#include "Stuff/SortingStuff1.h"
+#include "Stuff/SortingPerformance1.h"
+#include "Stuff/OverflowStuff1.h"
+#include "Stuff/SmallCharsetStuff1.h"
+#include "Stuff/StringTests1.h"
+#include "Stuff/ToolStuff1.h"
+#include "Stuff/FileSystemStuff1.h"
+#include "Stuff/Limits1.h"
+#include "Stuff/TimeStuff1.h"
+#include "Stuff/TimeFormatterStuff1.h"
+#include "Stuff/MappingStuff1.h"
 
 namespace easy {
 	namespace samples {
@@ -109,8 +110,22 @@ namespace easy {
 			}
 		};
 
+		struct ConvertSamples : SampleTest {
+			bool performAll() {
+				bool result = true;
+				result &= samples::MappingStuff1().performAll();
+				return result;
+			}
+		};
+
 		struct AllSamples: SampleTest {
 			bool performAll() {
+				bool result = true;
+				result &= performBasic();
+				return result;
+			}
+
+			bool performBasic() {
 				bool result = true;
 				auto basicSamples = AllBasicSamples();
 				auto foundSamples = AllFoundationSamples();
@@ -121,6 +136,7 @@ namespace easy {
 				auto sortingSamples = AllSortingSamples();
 				auto toolSamples = AllToolsPerformanceSamples();
 				auto timeSamples = AllTimeSamples();
+				auto convertSamples = ConvertSamples();
 
 				result &= basicSamples.performAll();
 				result &= foundSamples.performAll();
@@ -131,6 +147,7 @@ namespace easy {
 				result &= sortingSamples.performAll();
 				result &= toolSamples.performAll();
 				result &= timeSamples.performAll();
+				result &= convertSamples.performAll();
 
 				return result;
 			}

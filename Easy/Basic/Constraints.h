@@ -97,6 +97,14 @@ namespace easy {
 		struct hasDefaultConstructor : std::is_default_constructible<T> {
 		};
 
+		template <typename T>
+		struct hasCopyConstructor : std::is_copy_constructible<T> {
+		};
+
+		template <typename T>
+		struct isCopyAssignable : std::is_copy_assignable<T> {
+		};
+
 		// # Iterator
 
 		template <typename Der>

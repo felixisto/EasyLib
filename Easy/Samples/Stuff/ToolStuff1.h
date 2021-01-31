@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Samples.h"
-#include "Helpers/SampleTest.h"
-#include "../Tool/Stack.h"
+#include "../Samples.h"
+#include "../Helpers/SampleTest.h"
+#include "../../Tool/Stack.h"
 
 namespace easy {
     namespace samples {

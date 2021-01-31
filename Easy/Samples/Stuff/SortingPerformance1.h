@@ -1,19 +1,19 @@
 #pragma once
 
-#include "../Easy.h"
-#include "../Foundation/CString.h"
-#include "../Collections/Collections.h"
-#include "../Foundation/Number.h"
-#include "Helpers/SampleTest.h"
-#include "Data/SimpleNumbersSample.h"
-#include "../Math/Sorting/CheckSort.h"
-#include "../Math/Sorting/ReverseSort.h"
-#include "../Math/Sorting/BubbleSort.h"
-#include "../Math/Sorting/InsertionSort.h"
-#include "../Math/Sorting/SelectionSort.h"
-#include "../Math/Sorting/MergeSort.h"
-#include "../Math/Sorting/QuickSort.h"
-#include "../Math/Sorting/HeapSort.h"
+#include "../../Easy.h"
+#include "../../Foundation/CString.h"
+#include "../../Collections/Collections.h"
+#include "../../Foundation/Number.h"
+#include "../Helpers/SampleTest.h"
+#include "../Data/SimpleNumbersSample.h"
+#include "../../Math/Sorting/CheckSort.h"
+#include "../../Math/Sorting/ReverseSort.h"
+#include "../../Math/Sorting/BubbleSort.h"
+#include "../../Math/Sorting/InsertionSort.h"
+#include "../../Math/Sorting/SelectionSort.h"
+#include "../../Math/Sorting/MergeSort.h"
+#include "../../Math/Sorting/QuickSort.h"
+#include "../../Math/Sorting/HeapSort.h"
 
 namespace easy {
     namespace samples {

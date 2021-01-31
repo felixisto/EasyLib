@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Samples.h"
-#include "Helpers/SampleTest.h"
+#include "../Samples.h"
+#include "../Helpers/SampleTest.h"
 
 namespace easy {
     namespace samples {

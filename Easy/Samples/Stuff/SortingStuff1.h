@@ -1,11 +1,11 @@
 #pragma once
 
-#include "../Easy.h"
-#include "../Foundation/CString.h"
-#include "../Collections/Collections.h"
-#include "../Foundation/Number.h"
-#include "Helpers/SampleTest.h"
-#include "Data/SimpleNumbersSample.h"
+#include "../../Easy.h"
+#include "../../Foundation/CString.h"
+#include "../../Collections/Collections.h"
+#include "../../Foundation/Number.h"
+#include "../Helpers/SampleTest.h"
+#include "../Data/SimpleNumbersSample.h"
 
 namespace easy {
     namespace samples {

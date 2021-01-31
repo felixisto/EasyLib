@@ -78,6 +78,7 @@ namespace easy {
 
         // # Properties
 
+        cstring c() const;
         cstring buffer() const;
         integer length() const;
         bool isEmpty() const;

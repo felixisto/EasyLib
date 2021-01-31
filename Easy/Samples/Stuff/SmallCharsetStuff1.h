@@ -1,10 +1,10 @@
 #pragma once
 
-#include "../Easy.h"
-#include "../Basic/Utilities.h"
-#include "../Foundation/CString.h"
-#include "../Foundation/CharacterSet.h"
-#include "Helpers/SampleTest.h"
+#include "../../Easy.h"
+#include "../../Basic/Utilities.h"
+#include "../../Foundation/CString.h"
+#include "../../Foundation/CharacterSet.h"
+#include "../Helpers/SampleTest.h"
 
 namespace easy {
 	namespace samples {

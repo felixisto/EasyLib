@@ -1,9 +1,9 @@
 #pragma once
 
-#include "../Easy.h"
-#include "../Formatters/TimeFormatter.h"
-#include "Helpers/SampleTest.h"
-#include "Data/SimpleNumbersSample.h"
+#include "../../Easy.h"
+#include "../../Formatters/TimeFormatter.h"
+#include "../Helpers/SampleTest.h"
+#include "../Data/SimpleNumbersSample.h"
 
 namespace easy {
     namespace samples {

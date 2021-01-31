@@ -184,6 +184,10 @@ bool CString::isEqualToString(const CString& other, bool ignoreCase) const {
 
 // # Propeties
 
+cstring CString::c() const {
+    return _string.buffer();
+}
+
 cstring CString::buffer() const {
     return _string.buffer();
 }

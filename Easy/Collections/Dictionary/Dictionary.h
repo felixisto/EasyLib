@@ -45,7 +45,8 @@ namespace easy {
 
         Dictionary(MapIterator<Key, E> it) {
             while (it.hasNext()) {
-                insert(it.first, it.second);
+                auto& entry = it.get();
+                insert(entry.first, entry.second);
                 it++;
             }
         }
@@ -240,6 +241,19 @@ namespace easy {
 
         virtual MutableDictionaryIterator<Key, E> beginMutableEnumeration() {
             return MutableDictionaryIterator<Key, E>(_map.begin(), _map.end());
+        }
+
+        // # Convert
+
+        template <typename Source>
+        void mapTo(const Dictionary<Key, Source>& other) {
+            using Destination = E;
+
+            auto mapper = Mapper<Source, Destination>();
+            auto iterator = other.beginEnumeration();
+            auto parser = SimpleParser<Source, Destination>();
+            auto result = mapper.mapPair<Dictionary<Key, Destination>, Key>(iterator, parser);
+            addAll(result.beginEnumeration());
         }
     };
 };

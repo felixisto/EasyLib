@@ -93,6 +93,9 @@
     <ClCompile Include="Easy\FileSystem\Directory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Easy\Foundation\Number.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Easy\Easy.h">
@@ -152,22 +155,10 @@
     <ClInclude Include="Easy\Samples\Samples.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Easy\Samples\BasicStructs1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Samples\CollectionsStuff1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Samples\ToString1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Easy\Samples\Helpers\Logging.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Samples\Data\SimpleNumbersSample.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Samples\CountingStuff1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Formatters\NumberFormatter.h">
@@ -177,9 +168,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Basic\Basic.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Samples\Buffer1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Formatters\ByteFormatter.h">
@@ -216,9 +204,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Collections\Set\SimpleSet.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Samples\SortingStuff1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Math\Sorting\BubbleSort.h">
@@ -272,19 +257,7 @@
     <ClInclude Include="Easy\Collections\Enumeration\PairIterator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Easy\Samples\SortingPerformance1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Samples\OverflowStuff1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Easy\Formatters\DateFormatter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Samples\StringTests1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Samples\SmallCharsetStuff1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Foundation\CharacterSetData.h">
@@ -305,9 +278,6 @@
     <ClInclude Include="Easy\Tool\ErrorHandling.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Easy\Samples\ToolStuff1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Easy\Tool\TeuchosStackTrace\Teuchos_ConfigDefs.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -324,9 +294,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\FileSystem\Error.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Samples\FileSystemStuff1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Samples\Helpers\SampleTest.h">
@@ -353,19 +320,10 @@
     <ClInclude Include="Easy\Basic\Hashable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Easy\Samples\Limits1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Samples\TimeStuff1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Easy\Basic\TimeUnit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Formatters\TimeFormatter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Samples\TimeFormatterStuff1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Basic\DataSize.h">
@@ -393,6 +351,60 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\FileSystem\FileAttributes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\BasicStructs1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\Buffer1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\CollectionsStuff1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\CountingStuff1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\FileSystemStuff1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\Limits1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\MappingStuff1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\OverflowStuff1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\SmallCharsetStuff1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\SortingPerformance1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\SortingStuff1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\StringTests1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\TimeFormatterStuff1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\TimeStuff1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\ToolStuff1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Stuff\ToString1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Basic\Parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Collections\Utilities\Mapper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

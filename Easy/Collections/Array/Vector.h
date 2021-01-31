@@ -2,6 +2,7 @@
 
 #include "List.h"
 #include "../../Formatters/StringFormatter.h"
+#include "../../Basic/Parser.h"
 
 namespace easy {
 	/*
@@ -149,8 +150,8 @@ namespace easy {
 			_array.add(element);
 		}
 
-		void addAll(const List<E>& other) {
-			_array.addAll(other);
+		void addAll(const Vector<E>& other) {
+			_array.addAll(other._array);
 		}
 
 		void addAll(const E* buffer, integer length) {
@@ -250,6 +251,19 @@ namespace easy {
 
 		virtual MutableListIterator<E> beginMutableEnumeration() {
 			return _array.beginMutableEnumeration();
+		}
+
+		// # Convert
+		
+		template <typename Source>
+		void mapTo(const Vector<Source>& other) {
+			using Destination = E;
+
+			auto mapper = Mapper<Source, Destination>();
+			auto iterator = other.beginEnumeration();
+			auto parser = PrimitiveParser<Source, Destination>();
+			auto result = mapper.map<Vector<Destination>>(iterator, parser);
+			addAll(result.beginEnumeration());
 		}
 	};
 };

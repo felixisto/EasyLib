@@ -3,6 +3,7 @@
 #include "../Collection.h"
 #include "BaseList.h"
 #include "../../Foundation/CString.h"
+#include "../Utilities/Mapper.h"
 
 namespace easy {
 	/*
@@ -238,6 +239,7 @@ namespace easy {
 		// # StringRepresentable
 
 		virtual CString stringRepresentableOf(const E& element) const {
+			static_assert(constraints::isTypeOf<StringRepresentable, E>::value, "<E> must implement StringRepresentable");
 			return element.toString();
 		}
 
@@ -283,6 +285,19 @@ namespace easy {
 
 		virtual MutableListIterator<E> beginMutableEnumeration() {
 			return _array.beginMutableEnumeration();
+		}
+
+		// # Convert
+		
+		template <typename Source>
+		void mapTo(const List<Source>& other) {
+			using Destination = E;
+
+			auto mapper = Mapper<Source, Destination>();
+			auto iterator = other.beginEnumeration();
+			auto parser = SimpleParser<Source, Destination>();
+			auto result = mapper.map<List<Destination>>(iterator, parser);
+			addAll(result.beginEnumeration());
 		}
 	};
 };

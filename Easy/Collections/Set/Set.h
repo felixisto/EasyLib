@@ -101,18 +101,12 @@ namespace easy {
 			_set.insert(element);
 		}
 
-		void addAll(const List<E>& other) {
-			for (int e = 0; e < other.size(); e++) {
-				insert(other.get(e));
-			}
+		void addAll(const Set<E>& other) {
+			_set.addAll(other._set);
 		}
 
 		void addAll(const E* buffer, integer length) {
 			_set.addAll(buffer, length);
-		}
-
-		void addAll(const Set<E>& other) {
-			_set.addAll(other._set);
 		}
 
 		// # StringRepresentable
@@ -159,6 +153,19 @@ namespace easy {
 
 		virtual SetIterator<E> beginEnumeration() const {
 			return _set.beginEnumeration();
+		}
+
+		// # Convert
+		
+		template <typename Source>
+		void mapTo(const Set<Source>& other) {
+			using Destination = E;
+
+			auto mapper = Mapper<Source, Destination>();
+			auto iterator = other.beginEnumeration();
+			auto parser = SimpleParser<Source, Destination>();
+			auto result = mapper.map<Set<Destination>>(iterator, mapper.simpleParser());
+			addAll(result.beginEnumeration());
 		}
 	};
 };
