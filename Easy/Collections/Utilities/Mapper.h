@@ -10,6 +10,8 @@ namespace easy {
 
 		}
 
+		// Maps list iterator's contents to the specified collection type.
+		// Collection must have method add(element) defined.
 		template <typename CollectionDest>
 		CollectionDest map(ListIterator<SourceEl> iterator, const Parser<SourceEl, DestEl>& parser) const {
 			CollectionDest result;
@@ -23,6 +25,8 @@ namespace easy {
 			return result;
 		}
 
+		// Maps list iterator's contents to the specified collection type.
+		// Collection must have method insert(element) defined.
 		template <typename CollectionDest>
 		CollectionDest map(SetIterator<SourceEl> iterator, const Parser<SourceEl, DestEl>& parser) const {
 			CollectionDest result;
@@ -36,14 +40,16 @@ namespace easy {
 			return result;
 		}
 
+		// Maps list iterator's contents to the specified collection type.
+		// Collection must operator [key] defined.
 		template <typename CollectionDest, typename DictionaryKey>
 		CollectionDest mapPair(MapIterator<DictionaryKey, SourceEl> iterator, const Parser<SourceEl, DestEl>& parser) const {
 			CollectionDest result;
 
 			while (iterator.hasNext()) {
 				auto& entry = iterator.get();
-
-				result.insert(entry.first, parser.parse(entry.second));
+				
+				result[entry.first] = parser.parse(entry.second);
 
 				iterator++;
 			}
