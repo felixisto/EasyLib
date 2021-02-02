@@ -407,5 +407,17 @@
     <ClInclude Include="Easy\Collections\Utilities\Mapper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Easy\Collections\Filter\Filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Collections\Utilities\Transformer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Collections\Utilities\Transformers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Collections\Filter\Filters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -5,6 +5,8 @@
 #include "../../Math/Hashing/MurmurHash64B.h"
 #include "../Enumeration/ConstIterator.h"
 #include "../Enumeration/MutableIterator.h"
+#include "../Utilities/Transformer.h"
+#include "../Filter/Filter.h"
 #include <vector>
 
 namespace easy {
@@ -354,6 +356,35 @@ namespace easy {
 
 		virtual MutableListIterator<E> beginMutableEnumeration() {
 			return MutableListIterator<E>(_array.begin(), _array.end());
+		}
+
+		// # Convert
+
+		BaseList<E> filterBy(Filter<E>& filter) const {
+			BaseList<E> result;
+
+			auto iterator = beginEnumeration();
+
+			while (iterator.hasNext()) {
+				auto& value = iterator.get();
+
+				if (filter.filter(value)) {
+					result.add(value);
+				}
+
+				iterator++;
+			}
+
+			return result;
+		}
+
+		void transform(const Transformer<E>& transformer) {
+			auto iterator = beginMutableEnumeration();
+
+			while (iterator.hasNext()) {
+				transformer.transform(iterator.get());
+				iterator++;
+			}
 		}
 	};
 };

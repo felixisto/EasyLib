@@ -254,6 +254,12 @@ namespace easy {
 		}
 
 		// # Convert
+
+		Vector<E> filterBy(Filter<E>& filter) const {
+			Vector<E> result;
+			result._array = _array.filterBy(filter);
+			return result;
+		}
 		
 		template <typename Source>
 		void mapTo(const Vector<Source>& other) {
@@ -264,6 +270,10 @@ namespace easy {
 			auto parser = PrimitiveParser<Source, Destination>();
 			auto result = mapper.map<Vector<Destination>>(iterator, parser);
 			addAll(result.beginEnumeration());
+		}
+
+		void transform(const Transformer<E>& transformer) {
+			_array.transform(transformer);
 		}
 	};
 };

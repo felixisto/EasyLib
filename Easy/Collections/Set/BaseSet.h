@@ -138,5 +138,25 @@ namespace easy {
 		virtual SetIterator<E> beginEnumeration() const {
 			return SetIterator<E>(_set.cbegin(), _set.cend());
 		}
+
+		// # Convert
+
+		BaseSet<E> filterBy(Filter<E>& filter) const {
+			BaseSet<E> result;
+
+			auto iterator = beginEnumeration();
+
+			while (iterator.hasNext()) {
+				auto& value = iterator.get();
+
+				if (filter.filter(value)) {
+					result.insert(value);
+				}
+
+				iterator++;
+			}
+
+			return result;
+		}
 	};
 };

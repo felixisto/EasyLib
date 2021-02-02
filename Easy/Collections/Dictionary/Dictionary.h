@@ -255,5 +255,14 @@ namespace easy {
             auto result = mapper.mapPair<Dictionary<Key, Destination>, Key>(iterator, parser);
             addAll(result.beginEnumeration());
         }
+
+        void transform(const Transformer<E>& transformer) {
+            auto iterator = beginMutableEnumeration();
+
+            while (iterator.hasNext()) {
+                transformer.transform(iterator.get().second);
+                iterator++;
+            }
+        }
     };
 };

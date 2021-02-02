@@ -23,6 +23,10 @@ bool Byte::operator==(const Byte& other) const {
 	return value == other.value;
 }
 
+bool Byte::operator!=(const Byte& other) const {
+	return value != other.value;
+}
+
 bool Byte::operator<(const Byte& other) const {
 	return value < other.value;
 }
@@ -110,6 +114,10 @@ Short::Short(short value) : value(value) {
 
 bool Short::operator==(const Short& other) const {
 	return value == other.value;
+}
+
+bool Short::operator!=(const Short& other) const {
+	return value != other.value;
 }
 
 bool Short::operator<(const Short& other) const {
@@ -238,6 +246,10 @@ UShort::UShort(ushort value) : value(value) {
 
 bool UShort::operator==(const UShort& other) const {
 	return value == other.value;
+}
+
+bool UShort::operator!=(const UShort& other) const {
+	return value != other.value;
 }
 
 bool UShort::operator<(const UShort& other) const {
@@ -388,6 +400,10 @@ bool Integer::operator==(const Integer& other) const {
 	return value == other.value;
 }
 
+bool Integer::operator!=(const Integer& other) const {
+	return value != other.value;
+}
+
 bool Integer::operator<(const Integer& other) const {
 	return value < other.value;
 }
@@ -536,6 +552,10 @@ bool UInteger::operator==(const UInteger& other) const {
 	return value == other.value;
 }
 
+bool UInteger::operator!=(const UInteger& other) const {
+	return value != other.value;
+}
+
 bool UInteger::operator<(const UInteger& other) const {
 	return value < other.value;
 }
@@ -680,6 +700,10 @@ bool Big::operator==(const Big& other) const {
 	return value == other.value;
 }
 
+bool Big::operator!=(const Big& other) const {
+	return value != other.value;
+}
+
 bool Big::operator<(const Big& other) const {
 	return value < other.value;
 }
@@ -812,6 +836,10 @@ bool UBig::operator==(const UBig& other) const {
 	return value == other.value;
 }
 
+bool UBig::operator!=(const UBig& other) const {
+	return value != other.value;
+}
+
 bool UBig::operator<(const UBig& other) const {
 	return value < other.value;
 }
@@ -938,6 +966,10 @@ Float::Float(float value) : value(value) {
 
 bool Float::operator==(const Float& other) const {
 	return value == other.value;
+}
+
+bool Float::operator!=(const Float& other) const {
+	return value != other.value;
 }
 
 bool Float::operator<(const Float& other) const {
@@ -1094,6 +1126,10 @@ Real::Real(real value) : value(value) {
 
 bool Real::operator==(const Real& other) const {
 	return value == other.value;
+}
+
+bool Real::operator!=(const Real& other) const {
+	return value != other.value;
 }
 
 bool Real::operator<(const Real& other) const {

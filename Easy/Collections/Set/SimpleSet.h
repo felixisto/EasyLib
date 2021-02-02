@@ -132,6 +132,12 @@ namespace easy {
 
 		// # Convert
 
+		SimpleSet<E> filterBy(Filter<E>& filter) const {
+			SimpleSet<E> result;
+			result._set = _set.filterBy(filter);
+			return result;
+		}
+
 		template <typename Source>
 		void mapTo(const SimpleSet<Source>& other) {
 			using Destination = E;

@@ -42,6 +42,14 @@ namespace easy {
 		{ };
 
 		template<typename T, typename = void>
+		struct isInequalityComparable : std::false_type
+		{ };
+
+		template<typename T>
+		struct isInequalityComparable<T, typename std::enable_if<true, decltype(std::declval<T&>() != std::declval<T&>(), (void)0)>::type> : std::true_type
+		{ };
+
+		template<typename T, typename = void>
 		struct isGreaterComparable : std::false_type
 		{ };
 

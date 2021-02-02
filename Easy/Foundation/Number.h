@@ -23,6 +23,7 @@ namespace easy {
 		Byte(byte value);
 
 		bool operator==(const Byte& other) const;
+		bool operator!=(const Byte& other) const;
 		bool operator<(const Byte& other) const;
 		bool operator<=(const Byte& other) const;
 		bool operator>(const Byte& other) const;
@@ -57,6 +58,7 @@ namespace easy {
 		Short(short value);
 
 		bool operator==(const Short& other) const;
+		bool operator!=(const Short& other) const;
 		bool operator<(const Short& other) const;
 		bool operator<=(const Short& other) const;
 		bool operator>(const Short& other) const;
@@ -98,6 +100,7 @@ namespace easy {
 		UShort(ushort value);
 
 		bool operator==(const UShort& other) const;
+		bool operator!=(const UShort& other) const;
 		bool operator<(const UShort& other) const;
 		bool operator<=(const UShort& other) const;
 		bool operator>(const UShort& other) const;
@@ -144,6 +147,7 @@ namespace easy {
 		Integer(integer value);
 
 		bool operator==(const Integer& other) const;
+		bool operator!=(const Integer& other) const;
 		bool operator<(const Integer& other) const;
 		bool operator<=(const Integer& other) const;
 		bool operator>(const Integer& other) const;
@@ -190,6 +194,7 @@ namespace easy {
 		UInteger(uinteger value);
 
 		bool operator==(const UInteger& other) const;
+		bool operator!=(const UInteger& other) const;
 		bool operator<(const UInteger& other) const;
 		bool operator<=(const UInteger& other) const;
 		bool operator>(const UInteger& other) const;
@@ -235,6 +240,7 @@ namespace easy {
 		Big(big value);
 
 		bool operator==(const Big& other) const;
+		bool operator!=(const Big& other) const;
 		bool operator<(const Big& other) const;
 		bool operator<=(const Big& other) const;
 		bool operator>(const Big& other) const;
@@ -277,6 +283,7 @@ namespace easy {
 		UBig(ubig value);
 
 		bool operator==(const UBig& other) const;
+		bool operator!=(const UBig& other) const;
 		bool operator<(const UBig& other) const;
 		bool operator<=(const UBig& other) const;
 		bool operator>(const UBig& other) const;
@@ -318,6 +325,7 @@ namespace easy {
 		Float(float value);
 
 		bool operator==(const Float& other) const;
+		bool operator!=(const Float& other) const;
 		bool operator<(const Float& other) const;
 		bool operator<=(const Float& other) const;
 		bool operator>(const Float& other) const;
@@ -368,6 +376,7 @@ namespace easy {
 		Real(real value);
 
 		bool operator==(const Real& other) const;
+		bool operator!=(const Real& other) const;
 		bool operator<(const Real& other) const;
 		bool operator<=(const Real& other) const;
 		bool operator>(const Real& other) const;

@@ -2,8 +2,8 @@
 
 #include "../Collection.h"
 #include "BaseList.h"
-#include "../../Foundation/CString.h"
 #include "../Utilities/Mapper.h"
+#include "../../Foundation/CString.h"
 
 namespace easy {
 	/*
@@ -288,6 +288,12 @@ namespace easy {
 		}
 
 		// # Convert
+
+		List<E> filterBy(Filter<E>& filter) const {
+			List<E> result;
+			result._array = _array.filterBy(filter);
+			return result;
+		}
 		
 		template <typename Source>
 		void mapTo(const List<Source>& other) {
@@ -298,6 +304,10 @@ namespace easy {
 			auto parser = SimpleParser<Source, Destination>();
 			auto result = mapper.map<List<Destination>>(iterator, parser);
 			addAll(result.beginEnumeration());
+		}
+
+		void transform(const Transformer<E>& transformer) {
+			_array.transform(transformer);
 		}
 	};
 };
