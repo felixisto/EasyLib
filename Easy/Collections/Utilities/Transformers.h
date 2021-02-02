@@ -6,9 +6,9 @@
 namespace easy {
 	template <typename T>
 	struct TransformerAssign : Transformer<T> {
-		static_assert(constraints::isEqualityComparable<T>::value, "<T> must support equality");
+		static_assert(constraints::isCopyAssignable<T>::value, "<T> must support assignment");
 
-		T v;
+		const T& v;
 
 		TransformerAssign(const T& value) : v(value) {
 
@@ -20,21 +20,10 @@ namespace easy {
 	};
 
 	template <typename T>
-	struct TransformerAssignRef : Transformer<T> {
-		const T* v;
-
-		TransformerAssignRef(const T* value) : v(value) {
-
-		}
-
-		virtual void transform(T& value) const {
-			value = *v;
-		}
-	};
-
-	template <typename T>
 	struct TransformerAddition: Transformer<T> {
-		T v;
+		static_assert(constraints::isCopyAssignable<T>::value, "<T> must support assignment");
+
+		const T& v;
 
 		TransformerAddition(const T& value) : v(value) {
 
@@ -46,21 +35,10 @@ namespace easy {
 	};
 
 	template <typename T>
-	struct TransformerAdditionRef: Transformer<T> {
-		const T* v;
-
-		TransformerAdditionRef(const T* value) : v(value) {
-
-		}
-
-		virtual void transform(T& value) const {
-			value += *v;
-		}
-	};
-
-	template <typename T>
 	struct TransformerSubtraction: Transformer<T> {
-		T v;
+		static_assert(constraints::isCopyAssignable<T>::value, "<T> must support assignment");
+
+		const T& v;
 
 		TransformerSubtraction(const T& value) : v(value) {
 
@@ -72,21 +50,10 @@ namespace easy {
 	};
 
 	template <typename T>
-	struct TransformerSubtractionRef: Transformer<T> {
-		const T* v;
-
-		TransformerSubtractionRef(const T* value) : v(value) {
-
-		}
-
-		virtual void transform(T& value) const {
-			value -= *v;
-		}
-	};
-
-	template <typename T>
 	struct TransformerMultiplication: Transformer<T> {
-		T v;
+		static_assert(constraints::isCopyAssignable<T>::value, "<T> must support assignment");
+
+		const T& v;
 
 		TransformerMultiplication(const T& value) : v(value) {
 
@@ -99,7 +66,9 @@ namespace easy {
 
 	template <typename T>
 	struct TransformerDivision: Transformer<T> {
-		T v;
+		static_assert(constraints::isCopyAssignable<T>::value, "<T> must support assignment");
+
+		const T& v;
 
 		TransformerDivision(const T& value) : v(value) {
 
@@ -112,7 +81,9 @@ namespace easy {
 
 	template <typename T>
 	struct TransformerSqrt: Transformer<T> {
-		T v;
+		static_assert(constraints::isCopyAssignable<T>::value, "<T> must support assignment");
+
+		const T& v;
 
 		TransformerSqrt(const T& value) : v(value) {
 
@@ -125,7 +96,9 @@ namespace easy {
 
 	template <typename T>
 	struct TransformerLog : Transformer<T> {
-		T v;
+		static_assert(constraints::isCopyAssignable<T>::value, "<T> must support assignment");
+
+		const T& v;
 
 		TransformerLog(const T& value) : v(value) {
 
