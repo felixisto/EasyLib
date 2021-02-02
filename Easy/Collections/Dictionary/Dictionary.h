@@ -245,6 +245,24 @@ namespace easy {
 
         // # Convert
 
+        Dictionary<Key, E> filterBy(Filter<E>& filter) const {
+            Dictionary<Key, E> result;
+
+            auto iterator = beginEnumeration();
+
+            while (iterator.hasNext()) {
+                auto& value = iterator.get();
+
+                if (filter.filter(value.second)) {
+                    result.insert(value.first, value.second);
+                }
+
+                iterator++;
+            }
+
+            return result;
+        }
+
         template <typename Source>
         void mapTo(const Dictionary<Key, Source>& other) {
             using Destination = E;
