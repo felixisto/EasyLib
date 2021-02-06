@@ -253,6 +253,21 @@ namespace easy {
 			return _array.beginMutableEnumeration();
 		}
 
+		// # Sort
+
+		template <class Compare>
+		void sortBy(Compare condition) {
+			_array.sortBy(condition);
+		}
+
+		void sortByLesser() {
+			_array.sortByLesser();
+		}
+
+		void sortByGreater() {
+			_array.sortByGreater();
+		}
+
 		// # Convert
 
 		Vector<E> filterBy(Filter<E>& filter) const {

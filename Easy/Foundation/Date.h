@@ -55,8 +55,16 @@ namespace easy {
 			return _time.inSeconds() < other.inSeconds();
 		}
 
+		bool operator<=(const Date& other) const {
+			return _time.inSeconds() <= other.inSeconds();
+		}
+
 		bool operator>(const Date& other) const {
 			return _time.inSeconds() > other.inSeconds();
+		}
+
+		bool operator>=(const Date& other) const {
+			return _time.inSeconds() >= other.inSeconds();
 		}
 
 		Date& operator=(const Date& other) {

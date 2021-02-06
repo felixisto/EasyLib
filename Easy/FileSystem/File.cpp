@@ -168,6 +168,10 @@ const Error* File::open() {
 	return open(FileOpenFlags::standard());
 }
 
+const Error* File::openForWriting() {
+	return open(FileOpenFlags::writeOverride());
+}
+
 const Error* File::open(const FileOpenFlags& flags) {
 	if (isOpen()) {
 		return &Errors::ALREADY_OPEN();
@@ -206,6 +210,14 @@ const Error* File::close() {
 	_outputStream = NULL;
 
 	return NULL;
+}
+
+const Error* File::erase() {
+	close();
+
+	remove(_path.absolute().buffer());
+
+	return nullptr;
 }
 
 // # Disk storage properties

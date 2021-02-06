@@ -11,23 +11,25 @@ namespace easy {
 	 */
 	struct DateFormatter: StringRepresentable {
 		Date date;
-		CString format = "%Y-%m-%d %H:%M:%S";
+		CString format;
 
 		DateFormatter() {
-
+			format = standardFormat();
 		}
 
-		DateFormatter(const DateFormatter& other) : date(other.date) {
-
+		DateFormatter(const DateFormatter& other) : date(other.date), format(other.format) {
+			
 		}
 
-		DateFormatter(const Date& date) : date(date) {
-
+		DateFormatter(const Date& date) : date(date){
+			format = standardFormat();
 		}
 
 		// # Premade
 
-		static CString timestampFormat();
+		static CString standardFormat();
+		static CString shortTimestampFormat();
+		static CString timestampFileFriendlyFormat();
 
 		// # StringRepresentable
 

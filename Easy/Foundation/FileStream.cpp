@@ -126,6 +126,8 @@ const StreamError* FileOutputStream::close() {
 		return &StreamErrors::ALREADY_CLOSED();
 	}
 
+	flush();
+
 	fclose(_handle);
 	_handle = NULL;
 
@@ -133,11 +135,15 @@ const StreamError* FileOutputStream::close() {
 }
 
 const StreamError* FileOutputStream::write(BytesBuffer& buffer) {
+	return write(buffer.getBuffer(), buffer.elementSize(), buffer.sizeInBytes());
+}
+
+const StreamError* FileOutputStream::write(const byte* buffer, size_t elementSize, size_t length) {
 	if (_handle == NULL) {
 		return &StreamErrors::CLOSED();
 	}
 
-	int writtenCount = fwrite(buffer.buffer(), buffer.sizeInBytes(), buffer.elementSize(), _handle);
+	int writtenCount = fwrite(buffer, length, elementSize, _handle);
 
 	auto err = ferror(_handle);
 

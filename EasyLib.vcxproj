@@ -162,7 +162,7 @@
     <ClCompile Include="Easy\Foundation\FileStream.cpp" />
     <ClCompile Include="Easy\Foundation\Number.cpp" />
     <ClCompile Include="Easy\Math\Hashing\MurmurHash64B.cpp" />
-    <ClCompile Include="Easy\Tool\Logging.cpp" />
+    <ClCompile Include="Easy\Tool\Logging\Logging.cpp" />
     <ClCompile Include="Easy\Tool\Stack.cpp" />
     <ClCompile Include="Easy\Tool\StackWalker\StackWalker.cpp" />
     <ClCompile Include="Easy\Tool\TeuchosStackTrace\TeuchosStackTrace.cpp" />
@@ -249,7 +249,7 @@
     <ClInclude Include="Easy\Foundation\Number.h" />
     <ClInclude Include="Easy\Foundation\BasicString.h" />
     <ClInclude Include="Easy\Foundation\String.h" />
-    <ClInclude Include="Easy\Tool\Logging.h" />
+    <ClInclude Include="Easy\Tool\Logging\Logging.h" />
     <ClInclude Include="Easy\Math\Hashing\MurmurHash64B.h" />
     <ClInclude Include="Easy\Math\Sorting\CheckSort.h" />
     <ClInclude Include="Easy\Math\Sorting\HeapSort.h" />

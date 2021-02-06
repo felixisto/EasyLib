@@ -358,6 +358,29 @@ namespace easy {
 			return MutableListIterator<E>(_array.begin(), _array.end());
 		}
 
+		// # Sort
+
+		template <class Compare>
+		void sortBy(Compare condition) {
+			std::sort(_array.begin(), _array.end(), condition);
+		}
+
+		void sortByLesser() {
+			struct {
+				bool operator()(const E& a, const E& b) const { return a < b; }
+			} customLess;
+
+			sortBy(customLess);
+		}
+
+		void sortByGreater() {
+			struct {
+				bool operator()(const E& a, const E& b) const { return a > b; }
+			} customGreater;
+
+			sortBy(customGreater);
+		}
+
 		// # Convert
 
 		BaseList<E> filterBy(Filter<E>& filter) const {

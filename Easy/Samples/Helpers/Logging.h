@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../Tool/Logging.h"
+#include "../../Tool/Logging/Logging.h"
 
 namespace easy {
     namespace samples {

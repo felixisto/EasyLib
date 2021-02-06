@@ -5,4 +5,4 @@
 #include "Basic/Defines.h"
 #include "Basic/Utilities.h"
 #include "Collections/Collections.h"
-#include "Tool/Logging.h"
+#include "Tool/Logging/Logging.h"

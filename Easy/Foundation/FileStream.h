@@ -68,6 +68,7 @@ namespace easy {
 		virtual const StreamError* close();
 
 		virtual const StreamError* write(BytesBuffer& buffer);
+		virtual const StreamError* write(const byte* buffer, size_t elementSize, size_t length);
 
 		virtual const StreamError* flush();
 	};

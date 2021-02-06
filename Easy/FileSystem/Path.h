@@ -18,6 +18,7 @@ namespace easy {
 			static Path fileFromLocalPath(const CString& path);
 			static Path fileFromAbsolutePath(const CString& path);
 
+			static Path appDirectory();
 			static Path directoryFromLocalPath(const CString& path);
 			static Path directoryFromAbsolutePath(const CString& path);
 

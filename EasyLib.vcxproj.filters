@@ -45,9 +45,6 @@
     <ClCompile Include="Easy\Foundation\CharacterSetData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Easy\Tool\Logging.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Easy\Tool\Stack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -94,6 +91,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Easy\Foundation\Number.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Tool\Logging\Logging.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -153,9 +153,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Samples\Samples.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Samples\Helpers\Logging.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Samples\Data\SimpleNumbersSample.h">
@@ -267,9 +264,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Concurrency\ThreadManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Tool\Logging.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Tool\Stack.h">
@@ -417,6 +411,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Collections\Filter\Filters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Tool\Logging\Logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Helpers\Logging.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

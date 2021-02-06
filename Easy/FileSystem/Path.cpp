@@ -15,7 +15,7 @@ Path Path::fileFromLocalPath(const CString& path) {
 		pathStr.removeLast(Path::fileSystemSeparator());
 	}
 
-	auto basePath = DirectoryService::standard().applicationDirectory();
+	auto basePath = appDirectory();
 	return basePath.pathByAppendingComponent(pathStr);
 }
 
@@ -30,6 +30,10 @@ Path Path::fileFromAbsolutePath(const CString& path) {
 	return Path(pathStr);
 }
 
+Path Path::appDirectory() {
+	return DirectoryService::standard().applicationDirectory();
+}
+
 Path Path::directoryFromLocalPath(const CString& path) {
 	CString pathStr = path;
 
@@ -38,7 +42,7 @@ Path Path::directoryFromLocalPath(const CString& path) {
 		pathStr += Path::fileSystemSeparator();
 	}
 
-	auto basePath = DirectoryService::standard().applicationDirectory();
+	auto basePath = appDirectory();
 	return basePath.pathByAppendingComponent(pathStr);
 }
 

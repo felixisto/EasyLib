@@ -73,8 +73,11 @@ namespace easy {
 			const Error* create(bool replace);
 
 			const Error* open();
+			const Error* openForWriting();
 			const Error* open(const FileOpenFlags& flags);
 			const Error* close();
+
+			const Error* erase();
 
 			// # Disk storage properties
 
