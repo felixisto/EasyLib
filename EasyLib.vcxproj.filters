@@ -18,19 +18,7 @@
     <ClCompile Include="EasyLib.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Easy\Foundation\CString.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Foundation\CharacterSet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Easy\Math\Hashing\MurmurHash64B.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Formatters\DateFormatter.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Foundation\CharacterSetData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Easy\Tool\Stack.cpp">
@@ -40,15 +28,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Easy\Tool\StackWalker\StackWalker.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Foundation\FileStream.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Foundation\Date.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Foundation\Number.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Easy\Tool\Logging\Logging.cpp">
@@ -103,6 +82,27 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Easy\FileSystem\Windows\src\FileAttributeServiceWin32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Formatters\src\DateFormatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Foundation\src\CharacterSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Foundation\src\CharacterSetData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Foundation\src\CString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Foundation\src\Date.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Foundation\src\FileStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Foundation\src\Number.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
