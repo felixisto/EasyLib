@@ -1,5 +1,5 @@
 
-#include "ScopeLock.h"
+#include "../ScopeLock.h"
 
 using namespace easy;
 

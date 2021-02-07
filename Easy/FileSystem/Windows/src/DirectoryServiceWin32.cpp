@@ -1,8 +1,8 @@
 
-#include "DirectoryServiceWin32.h"
-#include "FileTimeWin32.h"
-#include "../../Formatters/DateFormatter.h"
-#include "../../Collections/Set/Set.h"
+#include "../DirectoryServiceWin32.h"
+#include "../FileTimeWin32.h"
+#include "../../../Formatters/DateFormatter.h"
+#include "../../../Collections/Set/Set.h"
 #include <Windows.h>
 
 using namespace easy;

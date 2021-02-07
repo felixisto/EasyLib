@@ -1,8 +1,8 @@
 
-#include "CString.h"
-#include "Character.h"
-#include "../Math/Hashing/MurmurHash64B.h"
-#include "../Collections/Array/List.h"
+#include "../CString.h"
+#include "../Character.h"
+#include "../../Math/Hashing/MurmurHash64B.h"
+#include "../../Collections/Array/List.h"
 #include <functional>
 #include <codecvt>
 

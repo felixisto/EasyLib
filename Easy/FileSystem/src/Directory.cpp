@@ -1,7 +1,7 @@
 
-#include "Directory.h"
+#include "../Directory.h"
+#include "../File.h"
 #include <direct.h>
-#include "File.h"
 
 using namespace easy;
 using namespace fs;

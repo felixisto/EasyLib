@@ -1,5 +1,5 @@
 
-#include "CharacterSetData.h"
+#include "../CharacterSetData.h"
 
 using namespace easy;
 

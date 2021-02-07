@@ -1,5 +1,5 @@
 
-#include "SimpleLock.h"
+#include "../SimpleLock.h"
 
 using namespace easy;
 

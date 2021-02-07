@@ -1,6 +1,6 @@
 
-#include "FileAttributeService.h"
-#include "Windows/FileAttributeServiceWin32.h"
+#include "../FileAttributeService.h"
+#include "../Windows/FileAttributeServiceWin32.h"
 
 using namespace easy;
 using namespace fs;

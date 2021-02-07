@@ -1,5 +1,5 @@
 
-#include "Number.h"
+#include "../Number.h"
 
 using namespace easy;
 

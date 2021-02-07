@@ -1,5 +1,5 @@
 
-#include "FileStream.h"
+#include "../FileStream.h"
 
 using namespace easy;
 

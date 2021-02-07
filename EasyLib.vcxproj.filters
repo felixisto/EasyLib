@@ -27,12 +27,6 @@
     <ClCompile Include="Easy\Math\Hashing\MurmurHash64B.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Easy\Concurrency\SimpleLock.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Concurrency\ScopeLock.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Easy\Formatters\DateFormatter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -48,31 +42,10 @@
     <ClCompile Include="Easy\Tool\StackWalker\StackWalker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Easy\FileSystem\File.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\FileSystem\Path.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Easy\Foundation\FileStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Easy\FileSystem\FileAttributeService.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\FileSystem\Windows\FileAttributeServiceWin32.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Easy\Foundation\Date.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\FileSystem\Windows\DirectoryServiceWin32.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\FileSystem\DirectoryService.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\FileSystem\Directory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Easy\Foundation\Number.cpp">
@@ -103,6 +76,33 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Easy\Basic\src\TimeUnit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Concurrency\src\ScopeLock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Concurrency\src\SimpleLock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\FileSystem\src\Directory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\FileSystem\src\DirectoryService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\FileSystem\src\File.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\FileSystem\src\FileAttributeService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\FileSystem\src\Path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\FileSystem\Windows\src\DirectoryServiceWin32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\FileSystem\Windows\src\FileAttributeServiceWin32.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

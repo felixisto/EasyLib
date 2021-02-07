@@ -1,6 +1,6 @@
 
-#include "DirectoryService.h"
-#include "Windows/DirectoryServiceWin32.h"
+#include "../DirectoryService.h"
+#include "../Windows/DirectoryServiceWin32.h"
 
 using namespace easy;
 using namespace fs;
