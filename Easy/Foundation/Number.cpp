@@ -1257,5 +1257,5 @@ CString Real::toString() const {
 // # Hashable
 
 ubig Real::hashValue() const {
-	return (ubig)value;
+	return (ubig)(value * 1000.0);
 }
