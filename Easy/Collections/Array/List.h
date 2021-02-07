@@ -294,12 +294,14 @@ namespace easy {
 			_array.sortBy(condition);
 		}
 
-		void sortByLesser() {
-			_array.sortByLesser();
+		void sortByAscending() {
+			static_assert(constraints::isLesserComparable<E>::value, "<E> must support lesser comparisons");
+			_array.sortByAscending();
 		}
 
-		void sortByGreater() {
-			_array.sortByGreater();
+		void sortByDescending() {
+			static_assert(constraints::isGreaterComparable<E>::value, "<E> must support greater comparisons");
+			_array.sortByDescending();
 		}
 
 		// # Convert

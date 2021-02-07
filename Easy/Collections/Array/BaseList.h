@@ -365,7 +365,7 @@ namespace easy {
 			std::sort(_array.begin(), _array.end(), condition);
 		}
 
-		void sortByLesser() {
+		void sortByAscending() {
 			struct {
 				bool operator()(const E& a, const E& b) const { return a < b; }
 			} customLess;
@@ -373,7 +373,7 @@ namespace easy {
 			sortBy(customLess);
 		}
 
-		void sortByGreater() {
+		void sortByDescending() {
 			struct {
 				bool operator()(const E& a, const E& b) const { return a > b; }
 			} customGreater;

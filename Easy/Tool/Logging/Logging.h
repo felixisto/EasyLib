@@ -57,6 +57,8 @@ namespace easy {
 		fs::File* _file;
 		FileOutputStream* _outputStream;
 
+		void createLogFileIfNeeded();
+		void eraseLogFilesOverCapacity();
 	public:
 
 		LogFileWriter();
@@ -65,9 +67,6 @@ namespace easy {
 		CString getCurrentLogName() const;
 		fs::Path getCurrentLogPath() const;
 		fs::Path getCurrentLogDirectory() const;
-
-		void createLogFileIfNeeded();
-		void eraseLogFilesOverCapacity();
 
 		void write(cstring message);
 	};

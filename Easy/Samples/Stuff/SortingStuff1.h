@@ -43,6 +43,27 @@ namespace easy {
                 sorting1.sortByDescending();
 
                 printLine("testList1 sorted (Desc): %s", testList1.toString().buffer());
+
+                Vector<int> testList2;
+                testList2.add(10005);
+                testList2.add(-5);
+                testList2.add(70);
+                testList2.add(3);
+                testList2.add(666);
+                testList2.add(9);
+                testList2.add(-77);
+                testList2.add(0);
+                testList2.add(100);
+
+                printLine("testList2 unsorted: %s", testList2.toString().buffer());
+
+                testList2.sortByAscending();
+
+                printLine("testList2 sorted (Asc): %s", testList2.toString().buffer());
+
+                testList2.sortByDescending();
+
+                printLine("testList2 sorted (Desc): %s", testList2.toString().buffer());
             }
 
             void sortingIntegers1() {
