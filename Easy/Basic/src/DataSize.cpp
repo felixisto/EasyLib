@@ -1,6 +1,6 @@
 #pragma once
 
-#include "DataSize.h"
+#include "../DataSize.h"
 
 using namespace easy;
 

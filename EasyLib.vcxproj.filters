@@ -18,12 +18,6 @@
     <ClCompile Include="EasyLib.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Easy\Basic\Limits.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Basic\Math.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Easy\Foundation\CString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -63,15 +57,6 @@
     <ClCompile Include="Easy\Foundation\FileStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Easy\Basic\Time.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Basic\TimeUnit.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Basic\DataSize.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Easy\FileSystem\FileAttributeService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -94,6 +79,30 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Easy\Tool\Logging\Logging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Other\src\Currency.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Other\src\Language.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Other\src\LanguageWriting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Basic\src\DataSize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Basic\src\Limits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Basic\src\Math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Basic\src\Time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Basic\src\TimeUnit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -417,6 +426,39 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Samples\Helpers\Logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Data\MovieSamples.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Samples\Data\MovieSample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Other\Currency.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Other\Currencies.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Other\Language.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Other\Languages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Other\LanguageWriting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Other\LanguageTraits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Other\Impl\CurrencyImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Other\Impl\LanguageImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Other\Impl\LanguageWritingImpl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

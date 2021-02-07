@@ -19,7 +19,17 @@ namespace easy {
 	struct Copyable {
 		virtual ~Copyable() {}
 
-		// Always returns non-null.
 		virtual T copy() const = 0;
+	};
+
+	/*
+	 * Describes an object that can be cloned.
+	 */
+	template<typename T>
+	struct Clonable {
+		virtual ~Clonable() {}
+
+		// Always returns non-null.
+		virtual T* clone() const = 0;
 	};
 };

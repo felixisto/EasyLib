@@ -140,11 +140,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="EasyLib.cpp" />
-    <ClCompile Include="Easy\Basic\DataSize.cpp" />
-    <ClCompile Include="Easy\Basic\Limits.cpp" />
-    <ClCompile Include="Easy\Basic\Math.cpp" />
-    <ClCompile Include="Easy\Basic\TimeUnit.cpp" />
-    <ClCompile Include="Easy\Basic\Time.cpp" />
+    <ClCompile Include="Easy\Basic\src\DataSize.cpp" />
+    <ClCompile Include="Easy\Basic\src\Limits.cpp" />
+    <ClCompile Include="Easy\Basic\src\Math.cpp" />
+    <ClCompile Include="Easy\Basic\src\TimeUnit.cpp" />
+    <ClCompile Include="Easy\Basic\src\Time.cpp" />
     <ClCompile Include="Easy\Concurrency\ScopeLock.cpp" />
     <ClCompile Include="Easy\Concurrency\SimpleLock.cpp" />
     <ClCompile Include="Easy\FileSystem\Directory.cpp" />
@@ -162,6 +162,9 @@
     <ClCompile Include="Easy\Foundation\FileStream.cpp" />
     <ClCompile Include="Easy\Foundation\Number.cpp" />
     <ClCompile Include="Easy\Math\Hashing\MurmurHash64B.cpp" />
+    <ClCompile Include="Easy\Other\src\Currency.cpp" />
+    <ClCompile Include="Easy\Other\src\Language.cpp" />
+    <ClCompile Include="Easy\Other\src\LanguageWriting.cpp" />
     <ClCompile Include="Easy\Tool\Logging\Logging.cpp" />
     <ClCompile Include="Easy\Tool\Stack.cpp" />
     <ClCompile Include="Easy\Tool\StackWalker\StackWalker.cpp" />
@@ -198,6 +201,17 @@
     <ClInclude Include="Easy\Formatters\TimeFormatter.h" />
     <ClInclude Include="Easy\Foundation\FileStream.h" />
     <ClInclude Include="Easy\Foundation\Stream.h" />
+    <ClInclude Include="Easy\Other\Currencies.h" />
+    <ClInclude Include="Easy\Other\Currency.h" />
+    <ClInclude Include="Easy\Other\Impl\CurrencyImpl.h" />
+    <ClInclude Include="Easy\Other\Language.h" />
+    <ClInclude Include="Easy\Other\Impl\LanguageImpl.h" />
+    <ClInclude Include="Easy\Other\Languages.h" />
+    <ClInclude Include="Easy\Other\LanguageTraits.h" />
+    <ClInclude Include="Easy\Other\LanguageWriting.h" />
+    <ClInclude Include="Easy\Other\Impl\LanguageWritingImpl.h" />
+    <ClInclude Include="Easy\Samples\Data\MovieSample.h" />
+    <ClInclude Include="Easy\Samples\Data\MovieSamples.h" />
     <ClInclude Include="Easy\Samples\Stuff\FileSystemStuff1.h" />
     <ClInclude Include="Easy\Samples\Helpers\SampleTest.h" />
     <ClInclude Include="Easy\Samples\Stuff\Limits1.h" />

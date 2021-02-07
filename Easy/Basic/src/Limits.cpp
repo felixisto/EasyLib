@@ -1,6 +1,6 @@
 
-#include "Limits.h"
-#include "Utilities.h"
+#include "../Limits.h"
+#include "../Utilities.h"
 
 namespace easy {
 	namespace limits {

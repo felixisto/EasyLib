@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Time.h"
-#include "TimeUnit.h"
+#include "../Time.h"
+#include "../TimeUnit.h"
 #include <chrono>
 #include <sstream>
 #include <iomanip>

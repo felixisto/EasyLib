@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../../Foundation/Number.h"
+
 namespace easy {
 	namespace samples {
 		struct SimpleNumbersSample {
