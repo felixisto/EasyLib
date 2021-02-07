@@ -24,8 +24,8 @@ namespace easy {
 
 		template <typename T>
 		const T* as() const {
-			if (dynamic_cast<T*>(this)) {
-				return (T*)this;
+			if (dynamic_cast<T*>(_impl)) {
+				return (T*)_impl;
 			}
 
 			return nullptr;
