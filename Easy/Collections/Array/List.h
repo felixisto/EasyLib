@@ -154,7 +154,7 @@ namespace easy {
 		}
 
 		void addAll(const List<E>& other) {
-			_array.addAll(other);
+			_array.addAll(other._array);
 		}
 
 		void addAll(const E* buffer, integer length) {
