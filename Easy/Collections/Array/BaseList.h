@@ -336,7 +336,8 @@ namespace easy {
 
 		// # Hashable
 
-		virtual ubig hashValue() const {
+		template <typename T = E, typename = std::enable_if_t<std::is_fundamental<T>::value, T>>
+	    ubig hashValue() const {
 			MurmurHash64B hasher;
 
 			ubig hash = 0;
@@ -346,6 +347,11 @@ namespace easy {
 			}
 
 			return hash;
+		}
+
+		template <typename T = E, typename = std::enable_if_t<!std::is_fundamental<T>::value, T>>
+		int hashValue() const {
+			return 0;
 		}
 
 		// # Enumeration

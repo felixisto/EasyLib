@@ -18,6 +18,8 @@ namespace easy {
 
     /*
      * Maps keys to values. Ordered.
+     * 
+     * Elements and keys must implement StringRepresentable and Hashable. Elements must also support equality.
      *
      * A map cannot contain duplicate keys, but it may contain duplicate values.
      * 

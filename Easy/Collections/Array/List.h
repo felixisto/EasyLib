@@ -25,7 +25,7 @@ namespace easy {
 
 		}
 
-		List(const List& other) : _array(other._array) {
+		List(const List<E>& other) : _array(other._array) {
 
 		}
 

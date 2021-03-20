@@ -20,10 +20,6 @@ ubig MurmurHash64B::combine(ubig a, ubig b) const {
     return a + b;
 }
 
-ubig MurmurHash64B::hash(void* value) const {
-    return (ubig)value;
-}
-
 ubig MurmurHash64B::hash(const void* value) const {
     return (ubig)value;
 }

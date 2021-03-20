@@ -21,7 +21,6 @@ namespace easy {
 
 		virtual ubig combine(ubig a, ubig b) const;
 
-		virtual ubig hash(void* value) const;
 		virtual ubig hash(const void* value) const;
 		virtual ubig hash(bool value) const;
 		virtual ubig hash(byte value) const;

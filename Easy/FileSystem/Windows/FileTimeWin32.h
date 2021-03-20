@@ -10,14 +10,14 @@ namespace easy {
 				struct tm tm;
 				memset(&tm, 0, sizeof(tm));
 
-				tm.tm_year = pTime->wYear - 1900; // EDIT 2 : 1900's Offset as per comment
+				tm.tm_year = pTime->wYear - 1900;
 				tm.tm_mon = pTime->wMonth - 1;
 				tm.tm_mday = pTime->wDay;
 
 				tm.tm_hour = pTime->wHour;
 				tm.tm_min = pTime->wMinute;
 				tm.tm_sec = pTime->wSecond;
-				tm.tm_isdst = -1; // Edit 2: Added as per comment
+				tm.tm_isdst = -1;
 
 				return mktime(&tm);
 			}

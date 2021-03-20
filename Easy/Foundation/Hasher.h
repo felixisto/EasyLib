@@ -16,7 +16,6 @@ namespace easy {
 	struct Hasher {
 		virtual ubig combine(ubig a, ubig b) const = 0;
 
-		virtual ubig hash(void* value) const = 0;
 		virtual ubig hash(const void* value) const = 0;
 		virtual ubig hash(bool value) const = 0;
 		virtual ubig hash(byte value) const = 0;

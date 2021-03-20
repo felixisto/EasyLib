@@ -24,8 +24,12 @@ namespace easy {
 
 		}
 
-		Vector(const Vector& other) : _array(other._array) {
+		Vector(const Vector<E>& other) : _array(other._array) {
 
+		}
+
+		Vector(const E& value, int count) {
+			fillUpWith(value, count);
 		}
 
 		Vector(VectorIterator<E> it) : _array(it) {
@@ -223,6 +227,12 @@ namespace easy {
 
 		void reverse() {
 			_array.reverse();
+		}
+
+		void fillUpWith(const E& element, int count) {
+			for (int e = 0; e < count; e ++) {
+				add(element);
+			}
 		}
 
 		// # StringRepresentable

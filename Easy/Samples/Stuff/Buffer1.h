@@ -70,7 +70,7 @@ namespace easy {
                 printLine("buffer a (16): %s", formatter.parse(a.buffer(), a.length()).buffer());
                 printLine("buffer b (16): %s", formatter.parse(b.buffer(), b.length()).buffer());
 
-                a.copyBytes(4, Range::CreateStartEnd(12, 16), b);
+                a.copyBytes(4, b, Range::CreateStartEnd(12, 16));
 
                 printLine("copy 11,16 from buffer b into buffer a position 4");
                 printLine("buffer a (16): %s", formatter.parse(a.buffer(), a.length()).buffer());

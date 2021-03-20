@@ -62,7 +62,7 @@ namespace easy {
 				zeroOut();
 			}
 
-			copy(buffer);
+			copyBytes(0, buffer, Range::CreateStartLength(0, length));
 		}
 
 		virtual ~Buffer() {
@@ -159,7 +159,7 @@ namespace easy {
 			T* end = _value + range.end;
 
 			Buffer<T> result = Buffer<T>(range.length());
-			result.copyBytes(0, range, _value);
+			result.copyBytes(0, _value, range);
 			return result;
 		}
 
@@ -190,16 +190,16 @@ namespace easy {
 			insertBytes(startIndex, other.buffer(), other.length());
 		}
 
-		void copyBytes(integer startIndex, const Range& from, const T* other) {
-			integer newSizeInBytes = lengthToSizeInBytes(from.length());
-			T* thisStart = buffer() + startIndex;
-			const T* otherStart = other + from.start;
+		void copyBytes(integer selfStartIndex, const T* other, const Range& otherRange) {
+			integer newSizeInBytes = lengthToSizeInBytes(otherRange.length());
+			T* thisStart = buffer() + selfStartIndex;
+			const T* otherStart = other + otherRange.start;
 
 			memcpy(thisStart, otherStart, newSizeInBytes);
 		}
 
-		void copyBytes(integer startIndex, const Range& from, const Buffer<T>& other) {
-			copyBytes(startIndex, from, other.buffer());
+		void copyBytes(integer startIndex, const Buffer<T>& other, const Range& otherRange) {
+			copyBytes(startIndex, other.buffer(), otherRange);
 		}
 
 		void copy(const Buffer<T>& other, const Range& range) {
