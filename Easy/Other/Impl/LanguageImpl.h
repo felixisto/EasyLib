@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../../Foundation/CString.h"
-#include "../LanguageTraits.h"
+#include "../LanguageFamily.h"
 #include "../LanguageWriting.h"
 
 namespace easy {

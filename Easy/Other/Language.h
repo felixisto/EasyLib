@@ -3,7 +3,7 @@
 #include "Impl/LanguageImpl.h"
 
 namespace easy {
-	struct Language {
+	struct Language: StringRepresentable, Hashable {
 	private:
 		LanguageImpl* _impl;
 
@@ -17,6 +17,9 @@ namespace easy {
 
 		bool operator==(const Language& other) const;
 		Language& operator=(const Language& other);
+
+		virtual CString toString() const;
+		virtual ubig hashValue() const const;
 
 		virtual ubig getType() const;
 		virtual CString getName() const;

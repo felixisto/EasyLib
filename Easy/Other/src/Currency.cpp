@@ -29,6 +29,14 @@ Currency& Currency::operator=(const Currency& other) {
 	return *this;
 }
 
+CString Currency::toString() const {
+	return getName();
+}
+
+ubig Currency::hashValue() const {
+	return getType();
+}
+
 ubig Currency::getType() const {
 	return _impl->getType();
 }

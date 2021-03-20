@@ -9,7 +9,7 @@ int main() {
     easy::math::Random::standard();
     easy::ThreadManager::standard();
     auto options = easy::Logging::standard().getWriteToFileOptions();
-    //options.enabled = true;
+    options.enabled = true;
     easy::Logging::standard().setWriteToFileOptions(options);
 
     bool result = easy::samples::AllSamples().performAll();

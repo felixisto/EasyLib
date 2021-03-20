@@ -105,6 +105,15 @@
     <ClCompile Include="Easy\Foundation\src\Number.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Easy\Other\src\Currencies.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Other\src\LanguageFamilies.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Easy\Other\src\LanguageFamily.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Easy\Easy.h">
@@ -449,16 +458,19 @@
     <ClInclude Include="Easy\Other\LanguageWriting.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Easy\Other\LanguageTraits.h">
+    <ClInclude Include="Easy\Other\impl\CurrencyImpl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Easy\Other\Impl\CurrencyImpl.h">
+    <ClInclude Include="Easy\Other\impl\LanguageImpl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Easy\Other\Impl\LanguageImpl.h">
+    <ClInclude Include="Easy\Other\impl\LanguageWritingImpl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Easy\Other\Impl\LanguageWritingImpl.h">
+    <ClInclude Include="Easy\Other\LanguageFamily.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Easy\Other\LanguageFamilies.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -3,10 +3,9 @@
 #include "Impl/CurrencyImpl.h"
 
 namespace easy {
-	struct Currency {
+	struct Currency: StringRepresentable, Hashable {
 	private:
 		CurrencyImpl* _impl;
-
 	public:
 
 		Currency();
@@ -17,6 +16,9 @@ namespace easy {
 
 		bool operator==(const Currency& other) const;
 		Currency& operator=(const Currency& other);
+
+		virtual CString toString() const;
+		virtual ubig hashValue() const const;
 
 		virtual ubig getType() const;
 		virtual CString getName() const;

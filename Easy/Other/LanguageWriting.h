@@ -3,7 +3,7 @@
 #include "Impl/LanguageWritingImpl.h"
 
 namespace easy {
-	struct LanguageWriting {
+	struct LanguageWriting: StringRepresentable, Hashable {
 	private:
 		LanguageWritingImpl* _impl;
 	public:
@@ -15,6 +15,9 @@ namespace easy {
 
 		bool operator==(const LanguageWriting& other) const;
 		LanguageWriting& operator=(const LanguageWriting& other);
+
+		virtual CString toString() const;
+		virtual ubig hashValue() const const;
 
 		virtual ubig getType() const;
 		virtual CString getName() const;

@@ -29,6 +29,14 @@ LanguageWriting& LanguageWriting::operator=(const LanguageWriting& other) {
 	return *this;
 }
 
+CString LanguageWriting::toString() const {
+	return getName();
+}
+
+ubig LanguageWriting::hashValue() const {
+	return getType();
+}
+
 ubig LanguageWriting::getType() const {
 	return _impl->getType();
 }

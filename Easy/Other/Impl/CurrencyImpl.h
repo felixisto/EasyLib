@@ -13,7 +13,7 @@ namespace easy {
 		virtual CurrencyImpl* clone() const = 0;
 	};
 
-	struct CurrencyGeneric : CurrencyImpl {
+	struct CurrencyGeneric: CurrencyImpl {
 	private:
 
 		ubig _type;

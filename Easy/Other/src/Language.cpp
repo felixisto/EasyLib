@@ -29,6 +29,14 @@ Language& Language::operator=(const Language& other) {
 	return *this;
 }
 
+CString Language::toString() const {
+	return getName();
+}
+
+ubig Language::hashValue() const {
+	return getType();
+}
+
 ubig Language::getType() const {
 	return _impl->getType();
 }
