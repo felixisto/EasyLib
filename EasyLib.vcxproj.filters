@@ -33,15 +33,6 @@
     <ClCompile Include="Easy\Tool\Logging\Logging.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Easy\Other\src\Currency.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Other\src\Language.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Other\src\LanguageWriting.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Easy\Basic\src\DataSize.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -103,15 +94,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Easy\Foundation\src\Number.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Other\src\Currencies.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Other\src\LanguageFamilies.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Easy\Other\src\LanguageFamily.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -441,36 +423,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Easy\Samples\Data\MovieSample.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Other\Currency.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Other\Currencies.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Other\Language.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Other\Languages.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Other\LanguageWriting.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Other\impl\CurrencyImpl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Other\impl\LanguageImpl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Other\impl\LanguageWritingImpl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Other\LanguageFamily.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Easy\Other\LanguageFamilies.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
